@@ -8,7 +8,6 @@ import 'package:scoped_model/scoped_model.dart';
 import 'package:veggieseasons/data/app_state.dart';
 import 'package:veggieseasons/data/preferences.dart';
 import 'package:veggieseasons/screens/home.dart';
-import 'package:veggieseasons/styles.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +23,6 @@ void main() {
         model: Preferences()..load(),
         child: CupertinoApp(
           debugShowCheckedModeBanner: false,
-          color: Styles.appBackground,
           home: HomeScreen(),
         ),
       ),
